@@ -4,7 +4,7 @@ namespace MongoDbTestConsole
 {
     class Program
     {
-        private const string ConnectionString = "mongodb+srv://testuser:test1234@mytestcluster-m2hjn.mongodb.net/test?retryWrites=true";
+        private const string ConnectionString = "mongodb+srv://test:test1234@mytestcluster-m2hjn.mongodb.net/test?retryWrites=true";
 
         internal const string Database = "testdb";
 
@@ -14,7 +14,8 @@ namespace MongoDbTestConsole
 
             //new TTLExample().Run(mongoClient);
             //new Transactions().Run(mongoClient);
-            new GeoLocation().Run(mongoClient);
+            //new GeoLocation().Run(mongoClient);
+            new TestArraySlice().Run(mongoClient);
         }
 
         private static MongoClient CreateConnection()

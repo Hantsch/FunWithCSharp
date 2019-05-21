@@ -66,6 +66,7 @@
     <Compile Include="GeoLocation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestArraySlice.cs" />
     <Compile Include="Transactions.cs" />
     <Compile Include="TTLExample.cs" />
   </ItemGroup>
