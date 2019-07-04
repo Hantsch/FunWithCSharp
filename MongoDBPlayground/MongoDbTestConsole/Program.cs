@@ -15,7 +15,8 @@ namespace MongoDbTestConsole
             //new TTLExample().Run(mongoClient);
             //new Transactions().Run(mongoClient);
             //new GeoLocation().Run(mongoClient);
-            new TestArraySlice().Run(mongoClient);
+            //new TestArraySlice().Run(mongoClient);
+            new TestConnectAndInsertSpeed().Run(mongoClient);
         }
 
         private static MongoClient CreateConnection()
