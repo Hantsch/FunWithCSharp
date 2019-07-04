@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeoLocation.cs" />
+    <Compile Include="InheritanceTest.cs" />
     <Compile Include="MultiThreadingTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
