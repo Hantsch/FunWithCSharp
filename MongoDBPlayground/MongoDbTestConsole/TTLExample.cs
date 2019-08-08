@@ -25,7 +25,10 @@ namespace MongoDbTestConsole
         {
             var db = client.GetDatabase(Program.Database);
             var collection = db.GetCollection<BsonDocument>(Collection);
-            
+
+            //var indexKey = Builders<BsonDocument>.IndexKeys.Ascending("createdAt");
+            //var indexModel = new CreateIndexModel<BsonDocument>(indexKey, new CreateIndexOptions() { ExpireAfter = TimeSpan.FromSeconds(10) });
+            //var resposne = collection.Indexes.CreateOne(indexModel);
 
             var entry = new BsonDocument
             {
